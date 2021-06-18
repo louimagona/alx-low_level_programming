@@ -1,5 +1,8 @@
 #include <stdio.h>
-i
+/**
+ *main - print lowercase a-z
+ *return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i;
@@ -8,5 +11,5 @@ int main(void)
 	{
 		printf("%d\n", i);
 	}
-	return (0)
+	return (0);
 }
