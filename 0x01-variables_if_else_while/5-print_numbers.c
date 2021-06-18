@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- *main - print lowercase a-z
- *return: Always 0 (Success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-int main(void)
+void main(void)
 {
 	int i;
 
@@ -11,5 +12,6 @@ int main(void)
 	{
 		printf("%d\n", i);
 	}
+	printf('\n')
 	return (0);
 }
