@@ -14,7 +14,7 @@ int main(void)
 	}
 	for (i = 'a'; i <= 'f'; i++)
 	{
-		putcha(i);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
