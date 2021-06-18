@@ -4,14 +4,15 @@
  *
  * Return: Always 0 (Success)
  */
-void main(void)
+int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 9; i++)
+	i=0;
+	while (i <= 9)
 	{
-		printf("%d\n", i);
+		printf("%d", i);
 	}
-	printf('\n')
+	printf("\n");
 	return (0);
 }
