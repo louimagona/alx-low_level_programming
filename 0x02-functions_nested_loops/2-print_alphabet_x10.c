@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-void print_alphabet(void)                       {                                                       char j;
+void print_alphabet_x10(void)                       {                                                   char j;
 	int i;
 
         for (i = 0; i <= 10; i++)                    {
