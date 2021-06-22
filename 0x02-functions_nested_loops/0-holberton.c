@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	char holberton[] = "Holberton";
+	char holberton[9] = "Holberton";
 	unsigned int i;
 
 	for (i = 0; i < sizeof(holberton); i++)
 	{
 		_putchar(holberton[i]);
 	}
-	return (0);
+_putchar('\n');
+return (0);
 }
