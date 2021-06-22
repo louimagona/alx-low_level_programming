@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for ALX School students.
+ * print alphabet in small letters.
  *
  * Return: Always 0.
  */
