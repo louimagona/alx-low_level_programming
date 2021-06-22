@@ -6,20 +6,12 @@
  */
 int _islower(int c)
 {
-	int i;
-	int j = tolower(c).
-
-	for (i = 'a'; i <= 'z'; i++)
+	if (c >= 'a' && c <= 'z')
 	{
-		if (i == j)
-		{
-			_putchar(31);
-		}
-		else
-		{
-			putchaf(30);
-		}
-
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
