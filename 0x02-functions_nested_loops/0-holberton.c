@@ -7,11 +7,12 @@
 int main(void)
 {
 	char holberton[] = "Holberton";
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < sizeof(holberton); i++)
 	{
 		_putchar(holberton[i]);
 	}
 	_putchar('\n');
+	return (0);
 }
