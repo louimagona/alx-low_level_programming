@@ -4,9 +4,11 @@
  *
  * Return: 0
  */
-void print_alphabet(void)                       {                                                       char i;                                 
-        for (i = 'a'; i <= 'z'; i++)                    {
-		for (j = 0; j <= 10; j++)
+void print_alphabet(void)                       {                                                       char j;
+	int i;
+
+        for (i = 0; i <= 10; i++)                    {
+		for (j = 'a'; j <= 'z'; j++)
 		{
 		_putchar(i);
 		}
