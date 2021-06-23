@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - check the code for ALX School students.
- *
+ * print_last_digit - prints the last digit of a number.
+ *@i: parameter to be supplied by user
  * Return: Always 0.
  */
 int print_last_digit(int i)
