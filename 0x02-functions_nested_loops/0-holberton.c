@@ -9,7 +9,7 @@ int main(void)
 	char holb[] = "Holberton";
 	unsigned int i;
 
-	for (i = 1; i <= sizeof(holb); i++)
+	for (i = 0; i < sizeof(holb); i++)
 	{
 		_putchar(holb[i]);
 	}
