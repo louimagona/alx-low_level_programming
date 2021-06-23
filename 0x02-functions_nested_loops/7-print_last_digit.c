@@ -4,21 +4,17 @@
  * @c:  is the int that will use for the argument of the function
  * Return: 0
  */
-int print_last_digit(int n)
+int print_last_digit(int c)
 {
-	int a;
-
-	if (n < 0)
+	if (c > 0 || c == 0)
 	{
-		n = -n;
+	_putchar (c % 10 + '0');
+	return (c % 10);
 	}
-
-	a = n % 10;
-
-	if (a < 0)
+	else
 	{
-		a = -a;
+	c = c * -1;
+	_putchar (c % 10 + '0');
+	return (c % 10);
 	}
-	_putchar(a);
-	return (a);
 }
