@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char holberton[9] = "Holberton";
+	char holb[] = "Holberton";
 	unsigned int i;
 
-	for (i = 0; i < sizeof(holberton); i++)
+	for (i = 1; i <= sizeof(holb); i++)
 	{
-		_putchar(holberton[i]);
+		_putchar(holb[i]);
 	}
 _putchar('\n');
 return (0);
