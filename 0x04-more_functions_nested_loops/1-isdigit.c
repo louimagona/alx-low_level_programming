@@ -1,8 +1,10 @@
 #include "holberton.h"
 
 /**
- * _isdigit - checks whether c is a digit between 0 and 9.
- *@c: the integer to be supplied by user.        * Return: 0 or 1.                               */
+ * _isdigit - check the code for ALX School students.
+ * @n: the integer to be supplied by user.
+ * Return: Always 0.
+ */
                                                 int _isdigit(int c)                             {
         if (c >= 48 && c <= 57)
         {
