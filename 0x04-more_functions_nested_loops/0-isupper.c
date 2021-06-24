@@ -8,17 +8,15 @@
 
 int _isupper(int c)
 {
-	int i;
+	char i;
+	i = c + '0';
 
-	for (i = 'A'; i <= 'Z'; i++)
+	if (i >= 'A' && i <= 'Z')
 	{
-		if ((c + '0') == i)
-		{
-			return (1).
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
