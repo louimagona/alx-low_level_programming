@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
+ * more_numbers - prints numbers above 10 as ch
  *
  * Return: Always 0.
  */
