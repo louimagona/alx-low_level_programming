@@ -1,33 +1,28 @@
 #include "holberton.h"
-
 /**
- * print_square - prints a square on terminal.
- * @size: value to be supplied
- * Return: Always 0.
+ * print_square - function that checks for uppercase character.
+ * @size: the int for the paramaters of my function
+ * Return: 0
  */
-
 void print_square(int size)
 {
-	int i, j;
+	int a = 0;
+	int b = 0;
 
 	if (size > 0)
 	{
-		i = 0;
-
-		while(i < size)
+		while (a < size)
 		{
-			j = 0;
-
-			while (j < size)
+			while (b < size)
 			{
 				_putchar('#');
-				j++;
+				b++;
 			}
-			i++;
+		b = 0;
+		a++;
+		_putchar('\n');
 		}
 	}
 	else
-	{
 		_putchar('\n');
-	}
 }
