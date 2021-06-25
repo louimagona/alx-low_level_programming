@@ -2,7 +2,7 @@
 
 /**
 *_isdigit - check if c is a digit between 0 and 9.
-*@n: the integer to be supplied by user.
+*@c: the integer to be supplied by user.
 *Return: 0 or 1.
 */
 
