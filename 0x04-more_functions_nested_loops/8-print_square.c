@@ -8,21 +8,24 @@
 
 void print_square(int size)
 {
-	char hash = '#';
 	int i, j;
 
-	for (i = 0; i < size; i++)
+	if (size > 0)
 	{
-		for (j = 0; j < size; j++)
+		i = 0;
+		while(i < size)
 		{
-			_putchar(hash);
-		}
-		if (size <= 0)
-		{
-			break;
+			j = 0;
+			while (j < size)
+			{
+				_putchar('#');
+				j++;
+			}
+			i++;
 		}
 	}
-	_putchar('\n');
-
-
+	else
+	{
+		_putchar('\n');
+	}
 }
