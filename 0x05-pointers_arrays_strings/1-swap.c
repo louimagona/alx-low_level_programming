@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
- *
+ * swap_int - swap the values of two variables.
+ *@a: variable pointer 1
+ *@b: variable pointer 2
  * Return: Always 0.
  */
 
