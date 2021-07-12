@@ -10,9 +10,10 @@
 
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-        int count, args;
+	int count, args;
 
 	args = 0;
+
 	if (argc > 1)
 	{
 		for (count = 1; count < argc; count++)
@@ -21,5 +22,5 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		}
 	}
 	printf("%d\n", args);
-        return (0);
+	return (0);
 }
