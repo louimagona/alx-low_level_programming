@@ -23,9 +23,9 @@ char *_strdup(char *str)
 	ptr = cpy;
 	while (*str)
 	{
-		*p++ = *str;
+		*ptr++ = *str;
 	}
-	*p = '\0';
+	*ptr = '\0';
 	return (ptr);
 	free(ptr);
 }
