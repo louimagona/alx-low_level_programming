@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "holberton.h"
-
 /**
  * str_concat - concatenate two strings using malloc
  * @s1: string 1 passed as argument 1
@@ -9,23 +8,10 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-
-	int j;
-
-	int k;
-
-	int l;
-
-	int m;
-
-	int len;
-
+	int i, j, k, l, m, len;
 	char *p;
-
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
-
 	i = 0;
 	while (s1[i])
 		i++;
