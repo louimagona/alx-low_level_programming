@@ -9,11 +9,22 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int i;
+
+	int j;
+
+	int k;
+
+	int l;
+
+	int m;
+
+	int len;
+
+	char *p;
+
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	int i, j, k, l, m, len;
-	
-	char *p;
 
 	i = 0;
 	while (s1[i])
