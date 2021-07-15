@@ -22,14 +22,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	k = 0;
 	while (k < i)
 	{
-		ptr[k] == s1[k];
+		ptr[k] = s1[k];
 		k++;
 	}
 	l = i;
 	m = 0;
 	while (m < n)
 	{
-		p[l] = s2[m];
+		ptr[l] = s2[m];
 		l++;
 		m++;
 	}
