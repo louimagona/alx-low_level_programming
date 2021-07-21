@@ -3,16 +3,16 @@
  * int_index - serche for a matching integer from array
  * @size: size of the array
  * @cmp: pointer to the comparing function
+ * @array: array of ints supplied
  * Return: index of the first match
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	
+
 	if (size <= 0)
 		return (-1);
-
 	for (i = 0; i < size; i++)
 	{
 		cmp(array[i]);
@@ -20,7 +20,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			break;
 		}
-	
 	}
 	return (i);
 }
