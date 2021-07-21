@@ -1,21 +1,5 @@
 #include "function_pointers.h"
 
-/**
- * prints - prints name character at a time
- *@name: string literal used as func parameter
- * Return: nothing
- */
-void prints(char *name)
-{
-	unsigned int i;
-
-	i = 0;
-	while (name[i])
-	{
-		_putchar(name[i]);
-		i++;
-	}
-}
 
 /**
  * print_name - prints name using function pointers
@@ -26,6 +10,8 @@ void prints(char *name)
 
 void print_name(char *name, void (*f)(char *))
 {
-	f = prints;
-	(*f)(name);
+	if (name && f)
+	{
+	f(name);
+	}
 }
