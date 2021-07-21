@@ -20,6 +20,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			break;
 		}
+		if (i == size - 1 && !cmp(array[i]))
+		{
+			return (-1);
+		}
 	}
 	return (i);
 }
