@@ -6,6 +6,7 @@
 /**
  * print_numbers - print all parameters as ints
  * @n: number of parameters
+ * @separator: string between each number
  * Return: nothing
  */
 
