@@ -19,7 +19,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *a;
 
 	if (!n)
+	{
+		printf("\n");
 		return;
+	}
 
 	va_start(p, n);
 
