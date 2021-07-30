@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - insert new node at end of a list
+ * add_node_end - insert new node at end of a list
  * @head: pointer to beginning of the list
  * @str: string to be copied
  * Return: address of the new element
@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	unsigned int i;
 
-	newnode = (list_t*)malloc(sizeof(list_t));
+	newnode = (list_t *)malloc(sizeof(list_t));
 	if (newnode == NULL)
 		return (NULL);
 	newnode->str = strdup(str);
@@ -21,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (i = 0; str[i]; i++)
 		;
 	newnode->len = i;
-	newnode -> next = NULL;
+	newnode->next = NULL;
 	temp = *head;
 
 	if (temp == NULL)
