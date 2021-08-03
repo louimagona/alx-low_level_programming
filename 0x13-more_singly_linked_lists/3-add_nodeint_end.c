@@ -4,32 +4,30 @@
  * add_nodeint_end - adds a node at beginning of list
  * @head: head pointer
  * @n: some value added I dont see for what
+ * Return: pointer to list
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-        listint_t *newnode, *temp;
+	listint_t *newnode, *traverse;
 
-        newnode = (listint_t *)malloc(sizeof(listint_t));
-        if (newnode == NULL)
-                return (NULL);
-
-	temp = *head;
-	newnode->n = n;
-	newnode->next = NULL;
-
+	newnode = (listint_t *)malloc(sizeof(listint_t));
+	if (newnode == NULL)
+		return (NULL);
 	if (*head == NULL)
 	{
 		*head = newnode;
 	}
 	else
 	{
-	while (temp->next != NULL)
-	{
-		temp = temp->next;
+		traverse = *head;
+		newnode->n = n;
+		newnode->next = NULL;
+		while (traverse->next != NULL)
+		{
+			traverse = traverse->next;
+		}
+		traverse->next = newnode;
 	}
-	temp->next = newnode;
-	}
-
-        return (*head);
+	return (*head);
 }
