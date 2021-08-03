@@ -12,10 +12,9 @@ void free_listint(listint_t *head)
 
 	traverse = head;
 
-	while (traverse->next != NULL)
+	while (traverse != NULL)
 	{
 		free(traverse);
 		traverse = traverse->next;
 	}
-	free(head);
 }
