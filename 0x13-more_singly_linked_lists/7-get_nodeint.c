@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * get_nodeint_at_index - get nth node in a linked list
+ * @head: head pointer
+ * @n: integer position
+ * Return: pointer to the nth node
+ */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
