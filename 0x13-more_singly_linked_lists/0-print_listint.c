@@ -13,7 +13,6 @@ size_t print_listint(const listint_t *h)
 	unsigned int i;
 
 	traverse = h;
-
 	i = 0;
 	while (traverse != NULL)
 	{
