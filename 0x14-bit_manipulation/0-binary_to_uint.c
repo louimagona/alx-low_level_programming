@@ -1,30 +1,29 @@
 #include "main.h"
-#include <math.h>
-#include <stdlib.h>
 
+/**
+ * binary_to_uint - function that converts a char binary to int
+ * @b: binary in char
+ * Return: number int; 0 if b is not binary so b is NULL
+ */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, j, k, sum, res;
+	unsigned int dec = 0, i = 0, res = 0, len;
 
-	i = 0;
-	while (b)
+	if (b == NULL || b[0] == '\0')
+		return (0);
+	/*condition to check if it is binary or not*/
+	for (len = 0; b[len] != '\0'; len++)
 	{
-		if (b[i] != '0' || b[i] != '1')
-		{
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
-			break;
-		}
-		i++;
-		b++;
 	}
-	sum = 0;
-	k = i;
-
-	for (j = 0; j < k; j++)
+	len = len - 1;
+	/*ehil << (len - i)= mmult 2^2 */
+	while (i <= len)
 	{
-		res = pow(2,j);
-		sum += b[i] * res;
-		i--;
+		dec = (b[i] - '0') << (len - i);
+		res = dec + res;
+		i++;
 	}
-	return (sum);
+	return (res);
 }
